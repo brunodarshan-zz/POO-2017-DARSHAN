@@ -103,7 +103,7 @@
 
     ```Java
       class Retangulo {
-        private perimetro;
+        private double perimetro;
         public double perimetro(double lado1, lado2){
           if (lado1 != 0 && lado2 != 0) {
             return 2 * lado1 + 2 * lado2;
@@ -117,7 +117,59 @@
     calculam a área e o perímetro e crie uma outra classe chamada TestaCirculo que
     instancia, atribui um valor ao raio e exibe a área e o perímetro chamando os dois
     métodos definidos na questão anterior.
-    
+
+    _Circulo.java_
+    ```Java
+      class Circulo {
+        private double raio;
+        private double comprimento;
+        private double area;
+
+        static double PI = 3.14159265359;
+
+        public Circulo(double raio){
+          CalculaArea(raio);
+          CalculaComprimento(raio);
+        }
+
+        //SetArea
+        public void CalculaArea(double r){
+          area = PI * (r ** 2);
+        }
+
+        //SetComprimento
+        public void CalculaComprimento(double r){
+          comprimento = 2 * PI * r;
+        }
+
+        public double perimetro(double lado1, lado2){
+          if (lado1 != 0 && lado2 != 0) {
+            return 2 * lado1 + 2 * lado2;
+          }
+        }
+
+        public double getArea(){
+          return area;
+        }
+        public double getPerimetro(){
+          return perimetro;
+        }
+      }
+
+
+    ```
+    _TestaCirculo.java_
+    ```Java
+      class TestaCirculo {
+        public static void main(String[] args){
+        Circulo circulo = new Circulo(2);
+        System.out.println("Circulo(Area: " + circulo.getArea() + ", Perimetro: " + circulo.getPerimetro() + ")");
+        }
+      }
+
+    ```
+
+
 9. Crie uma classe chamada SituacaoFinanceira com os atributos valorCreditos e
     valorDebitos. Crie um método chamado saldo() que retorna/calcula a diferença
     entre crédito e débito. Crie também uma classe chamada TestaSituacaoFinanceira
