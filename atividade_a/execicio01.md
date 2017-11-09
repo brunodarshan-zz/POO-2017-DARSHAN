@@ -169,9 +169,53 @@
 
     ```
 
-
 9. Crie uma classe chamada SituacaoFinanceira com os atributos valorCreditos e
     valorDebitos. Crie um método chamado saldo() que retorna/calcula a diferença
     entre crédito e débito. Crie também uma classe chamada TestaSituacaoFinanceira
     que instancia uma classe SituacaoFinanceira, inicializa os dois atributos e exibe o
     resultado do método saldo().
+
+  _SituacaoFinanceira_
+  ```Java
+    class SituacaoFinanceira {
+      private double valorCreditos, valorDebitos;
+
+
+      public double getCreditos(){
+        return valorCreditos;
+      }
+
+      public double getDebitos(){
+        return valorDebitos;
+      }
+
+      public void setCreditos(credito){
+        valorCreditos += credito;
+      }
+
+      public void setDebitos(double debito){
+        valorDebitos += debito;
+      }
+
+      public double saldo(){
+        return getCreditos - getDebitos;
+      }
+
+    }
+
+  ```
+  _TestaSituacaoFinanceira_
+  ```Java
+  class TestaSituacaoFinanceira {
+    public static void main(String[] args){
+      // instancia uma classe SituacaoFinanceira,
+      SituacaoFinanceira situacao = new SituacaoFinanceira();
+      // inicializa os dois atributos
+      situacao.getCreditos(420);
+      situacao.getDebitos(230)
+      // exibe o resultado do método saldo().
+      System.out.println("Saldo : " + situacao.saldo());
+
+    }
+  }
+  ```
