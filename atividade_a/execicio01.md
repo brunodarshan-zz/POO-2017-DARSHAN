@@ -18,10 +18,11 @@
 | Etinia   |
 
 4. Considerando os objetos Pessoa e Conta:
-    a - Seria interessante em um sistema bancário um objeto "conta" possuir uma
+
+    a) Seria interessante em um sistema bancário um objeto "conta" possuir uma
        "pessoa" como um atributo interno representando o titular da conta?
-       
-    b - Olhando no sentido inverso, seria interessante uma pessoa possuir mais de
+
+    b) Olhando no sentido inverso, seria interessante uma pessoa possuir mais de
        uma conta como atributo? Que elemento da programação estruturada melhor
        representaria o conjunto de contas de uma pessoa?
 5. Identifique pelo menos 5 objetos de um sistema de controle acadêmico. Ex: aluno.
