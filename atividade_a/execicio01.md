@@ -7,7 +7,8 @@
     do sistema. Enumere na tabela abaixo contextos/sistemas distintos em que os
     atributos abaixo seriam ou não relevantes:
 
-| Atributo | Sistema em que é importante | Sistema em que não é importante
+| Atributo | Sistema em que é importante | Sistema em que não é importante |
+| -------- | --------------------------- | ------------------------------- |
 | Peso   |
 | Tipo de CNH  |
 | Tipo Sanguíneo   |
