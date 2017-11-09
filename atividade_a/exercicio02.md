@@ -1,4 +1,5 @@
 # Exercício 02
+[Anterior](exercicio01.md)
 
 1. Corrija as seguintes afirmações: Considere uma classe chamada Avaliacao. Para compilarmos e executamos a
 classe devemos executar os seguintes comandos:
@@ -188,3 +189,6 @@ os métodos de cada classe. Ex: Para a classe “X.java”, crie uma classe cham
     c. Chame o método inverte() em cada um dos equipamentos;
     d. Faça um if para cada um dos equipamentos testando se o mesmo está
        ligado. Imprima: “ligado” ou “desligado” dependendo da situação de ambos;
+
+
+[Exercício 3](exercicio03.md)
