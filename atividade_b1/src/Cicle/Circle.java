@@ -102,18 +102,18 @@ class Circle {
     public String outro_circulo_eh(Circle c){
         double distancia = distancia_entre_pontos(c);
         double soma_raios = (this.getRaio() + c.getRaio());
-        if (distancia > soma_raios){
-            return "Externos";
-        } else {
+
+
             if (distancia == soma_raios) {
                 return "Tangente";
-            } else {
+            } else
                 if (distancia < soma_raios) {
                     return "Secante";
                 }
-            }
 
-        }
+
+
+        return "Externos";
     }
 
 
