@@ -53,7 +53,7 @@ class Circle {
     }
 
     public void setX(int n){
-        if (n != getX()){
+        if (n < getX()){
             x -= n;
         } else {
             x += n;
@@ -61,7 +61,7 @@ class Circle {
     }
 
     public void setY(int n){
-        if (n != getY()){
+        if (n < getY()){
             y -= n;
         } else {
             y += n;
