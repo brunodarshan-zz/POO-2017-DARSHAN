@@ -54,17 +54,16 @@ class Circle {
 
     public void setX(int n){
         if (n != getX()){
-
-            if (x > n || n <= 0){
-                x += n;
-            } else {
-                x -= (x - n);
-            }
+            x -= n;
+        } else {
+            x += n;
         }
     }
 
     public void setY(int n){
         if (n != getY()){
+            y -= n;
+        } else {
             y += n;
         }
     }
@@ -101,19 +100,20 @@ class Circle {
     }
 
     public String outro_circulo_eh(Circle c){
-        int distancia = distancia_entre_pontos(c);
+        double distancia = distancia_entre_pontos(c);
         double soma_raios = (this.getRaio() + c.getRaio());
         if (distancia > soma_raios){
             return "Externos";
         } else {
             if (distancia == soma_raios) {
                 return "Tangente";
-            } else if (distancia < soma_raios) {
-                return "Secante";
+            } else {
+                if (distancia < soma_raios) {
+                    return "Secante";
+                }
             }
+
         }
-
-
     }
 
 
