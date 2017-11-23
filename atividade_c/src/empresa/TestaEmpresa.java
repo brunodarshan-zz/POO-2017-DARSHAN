@@ -1,11 +1,11 @@
-package src;
+package empresa;
 import empresa.models.Funcionario;
 import empresa.models.Empresa;
 
-public class Main {
+public class TestaEmpresa {
 
     public static void main(String[] args) {
-	    Empresa empresa = new Empresa("Ju corporation");
+        Empresa empresa = new Empresa("Ju corporation");
         System.out.println(empresa);
 
         empresa.definirRH(new Funcionario[10]);
@@ -19,3 +19,4 @@ public class Main {
 
     }
 }
+
