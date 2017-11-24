@@ -9,12 +9,11 @@ class Casa
   private int porta_livre = 0;
 
 
-
-
     public Casa(){
         this.cor = "branca";
         this.totalDePortas = 2;
     }
+
     public Casa(int totalDePortas){
         this();
         this.totalDePortas = totalDePortas;
@@ -26,18 +25,23 @@ class Casa
         this.cor = cor;
     }
 
-
     public int quantidadePortas() { return this.totalDePortas; }
+
+    public int portasUsadas(){
+        return portas.length;
+    }
+
+    public boolean temEspacoParaPorta(){
+        return quantidadePortas() < this.portasUsadas();
+    }
 
     public void pintaCasa(String c) { this.cor = c; }
 
     public void adicionaPorta(Porta porta)
     {
-      if (this.porta_livre <= this.totalDePortas - 1 ) {
+      if (this.temEspacoParaPorta()) {
         this.portas[porta_livre] = porta;
         this.porta_livre += 1;
-      } else {
-        System.out.println("Não há espaço para porta disponível");
       }
   }
 
