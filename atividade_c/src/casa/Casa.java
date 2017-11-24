@@ -33,7 +33,7 @@ class Casa
 
     public void adicionaPorta(Porta porta)
     {
-      if (this.porta_livre <= this.totalDePo    rtas - 1 ) {
+      if (this.porta_livre <= this.totalDePortas - 1 ) {
         this.portas[porta_livre] = porta;
         this.porta_livre += 1;
       } else {
